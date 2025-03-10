@@ -1,0 +1,86 @@
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Maven
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+mvnw
+mvnw.cmd
+
+# Gradle
+.gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+gradle-app.setting
+gradle-app.properties
+gradle-app.setting
+gradle-app.properties
+gradle-app.setting
+gradle-app.properties
+gradle-app.properties
+gradlew
+gradlew.bat
+
+# Eclipse
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# NetBeans
+nbproject/private/
+build/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# VS Code
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Executables
+*.exe
+*.dll
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# Dependency directories (if you manually manage them)
+lib/
+
+# Jar files
+*.jar
+
+# Configuration files (if you don't want to commit them)
+#application*.properties
+#application*.yml
+
+# Keystore files
+*.jks
+*.keystore
+
+# Other files you might want to ignore
+/node_modules
+/dist
+
+# Code generated files
+generated-report.xlsx

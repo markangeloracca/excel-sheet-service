@@ -1,6 +1,10 @@
 package com.markangelo.poc.excelsheetservice;
 
-import org.apache.poi.ss.usermodel.*;
+import dto.Person;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileOutputStream;
@@ -17,7 +21,7 @@ public class ExcelGenerator {
 
             // Create header row
             Row headerRow = sheet.createRow(0);
-            String[] headers = {"First Name", "Last Name", "Age", "Email", "Address"};
+            final String[] headers = {"First Name", "Last Name", "Age", "Email", "Address"};
             for (int i = 0; i < headers.length; i++) {
                 Cell cell = headerRow.createCell(i);
                 cell.setCellValue(headers[i]);
@@ -49,5 +53,4 @@ public class ExcelGenerator {
         System.out.println("Excel file generated successfully!");
     }
 
-    record Person(String firstName, String lastName, int age, String email, String address) {}
 }
